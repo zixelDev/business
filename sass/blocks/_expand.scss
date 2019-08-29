@@ -1,0 +1,72 @@
+.expand {
+    height:580px;
+    background: url('/images/expand_bg.jpg') center (center/cover) no-repeat;
+    padding: 79px  0 0 0;
+    position: relative;
+
+    &_title {
+        width: 100%;
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 35.99px;
+        text-align: center;
+        margin: 0;
+    }
+
+    &_section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_item {
+            position: absolute;
+            top: 270px;
+            z-index: 2;
+           &_title {
+               color: #ffffff;
+                font-size: 30px;
+                font-weight: 500;
+                margin: 5px 0 0 0;
+                line-height: 22px;
+                text-transform: uppercase;
+            }
+            &_descr {
+                color: #ffffff;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 26px;
+            }
+        }
+        .left {
+            margin-right: 87px;
+            text-align: end;
+            right: 50%;
+        }
+        .right {
+            text-align:start;
+            margin-left: 87px;
+            left: 50%;
+        }
+    }
+
+    &_left-square {
+            width: 167px;
+            height: 167px;
+            background-color: #00c2f0;
+            opacity: 0.3;
+            z-index: 1;
+            position: absolute;
+            top: 232px;
+            right: calc(50% + 43px);
+    }
+    &_right-square {
+        width: 167px;
+        height: 167px;
+        background-color: #00c2f0;
+        opacity: 0.3;
+        z-index: 1;
+        position: absolute;
+        top: 232px;
+        left: calc(50% + 43px);
+}
+}

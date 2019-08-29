@@ -1,0 +1,139 @@
+.promo {
+
+    height: 700px;
+    padding: 39px 0 0 0;
+    background: url('/images/main_bg.jpg') center (center/cover) no-repeat;
+
+    nav {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 415px;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+
+            li {
+                margin-right: 45px;
+
+                a {
+                    color: #ffffff;
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: 26px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+        }
+    }
+
+    &_title {
+        color: #ffffff;
+        font-family: "Roboto - Black";
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 48px;
+        margin: 133px 0 0 0;
+    }
+
+    &_subtitle {
+        color: #ffffff;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 300;
+        margin: 27px 0 0 0;
+
+    }
+
+    .container {
+        position: relative;
+
+        .phone {
+            position: absolute;
+            top: 131px;
+            right: 0;
+        }
+    }
+
+    &_slider {
+        display: flex;
+        position: absolute;
+        top: 621px;
+        right: 50%;
+        transform: translateX(50%);
+
+        &_arrow-left {
+            margin-right: 13px;
+            cursor: pointer;
+            
+            &::before {
+                display: inline-block;
+                content: '';
+                width: 11px;
+                height: 1px;
+                background-color: #ffffff;
+                transform: rotate(-30deg);
+            }
+
+            &::after {
+                display: block;
+                content: '';
+                width: 11px;
+                height: 1px;
+                background-color: #ffffff;
+                transform: rotate(30deg);
+
+            }
+
+        }
+
+        &_arrow-right {
+            margin-left: 10px;
+            cursor: pointer;
+            &::before {
+                display: inline-block;
+                content: '';
+                width: 11px;
+                height: 1px;
+                background-color: #ffffff;
+                transform: rotate(30deg);
+            }
+
+            &::after {
+                display: block;
+                content: '';
+                width: 11px;
+                height: 1px;
+                background-color: #ffffff;
+                transform: rotate(-30deg);
+
+            }
+
+        }
+        &_round {
+            cursor: pointer;
+            width: 11px;
+            height: 11px;
+            border: 1px solid #ffffff;
+            border-radius: 100%;
+            margin-right: 3px;
+            margin-top: 10px;
+            &_active {
+                background-color: #ffffff;
+            }
+        };
+        
+
+
+    }
+
+}

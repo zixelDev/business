@@ -1,0 +1,22 @@
+.button {
+    width: 241px;
+    height: 60px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.07);
+    background-color: #00c2f0;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 39px;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+        box-shadow: inset 0 0 7px rgba(16, 119, 138, 1.07);
+    }
+    &_call {
+        transform: translateX(255%);
+        margin:  30 auto 0 auto;
+    }
+}

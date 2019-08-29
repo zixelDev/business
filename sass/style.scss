@@ -1,0 +1,23 @@
+@import 'base/variables';
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/features';
+@import 'blocks/solutions';
+@import 'blocks/advantages';
+@import 'blocks/expand';
+@import 'blocks/access';
+@import 'blocks/footer';
+@import 'blocks/buttons';
+
+
+@import 'lib/slick';
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+}

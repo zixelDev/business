@@ -1,0 +1,46 @@
+.advantages {
+    padding: 80px 0 80px 0;
+
+    &_title {
+        color: #393939;
+        font-family: "Roboto - Black";
+        font-size: 30px;
+        // font-weight: 500;
+        line-height: 35.99px;
+        text-align: center;
+        margin: 0;
+    }
+
+    &_list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 44px;
+
+        &_item {
+            height: 355px;
+            position: relative;
+
+            &_bb {
+                position: absolute;
+                width: 570px;
+                height: 156px;
+                background-color: #000000;
+                opacity: 0.44;
+                top: 100px;
+                z-index: 1;
+            }
+            h2 {
+                width: 100%;
+                top: 140px;
+                position: absolute;
+                color: #ffffff;
+                font-size: 23px;
+                font-weight: 400;
+                line-height: 26px;
+                text-align: center;
+                margin: 0;
+                z-index: 2;
+            }
+        }
+    }
+}
