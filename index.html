@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <header>
+    <a class="anchor" href="#header"><img src="icons/arrow_anchor.svg" alt="anchor" ></a>
+    <header id = 'header'>
         <div class="container">
             <div class="countries">
                 <div class="countries_item-country">
@@ -56,16 +57,16 @@
             </div>
         </div>
     </header>
-    <section class="promo">
+    <section class="promo" id = "promo">
         <div class="container">
             <nav>
                 <a href="#"><img src="images/main_logo.png" alt="main_logo"></a>
                 <ul>
                     <li> <a href="#">главная</a> </li>
-                    <li><a href="#">Модули</a></li>
-                    <li><a href="#">Отрасли</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Наши обязательства</a></li>
+                    <li><a href="#features">Модули</a></li>
+                    <li><a href="#solutions">Отрасли</a></li>
+                    <li><a href="#footer">О нас</a></li>
+                    <li><a href="#advantages">Наши обязательства</a></li>
                 </ul>
             </nav>
             <h2 class="promo_title">Управляй своим бизнесом <br> через Smartphone</h2>
@@ -84,7 +85,7 @@
             </div>
         </div>
     </section>
-    <section class="features">
+    <section class="features" id = 'features'>
         <div class="container">
             <div class="features_top-line">
                 <div class="features_top-line_item">
@@ -120,7 +121,7 @@
             </div>
         </div>
     </section>
-    <section class="solutions">
+    <section class="solutions" id = 'solutions'> 
         <div class="container">
             <h2 class="solutions_title">Prengi предоставляет экспертные решения <br>
                 для Вашей отрасли</h2>
@@ -143,9 +144,11 @@
                 <div class="solutions_slider_item"><img src="images/screen2.png" alt="screen2"></div>
                 <div class="solutions_slider_item"><img src="images/screen3.png" alt="screen3"></div>
             </div>
+            <img src="icons/arrow_left_blue.svg" alt="left" class="solutions_left-arrow control">
+            <img src="icons/arrow_right_blue.svg" alt="right" class="solutions_right-arrow control">
         </div>
     </section>
-    <section class="advantages">
+    <section class="advantages" id = 'advantages'>
         <div class="container">
             <h2 class="advantages_title">Преимущества Prengi для <br>
                 Вашей отрасли</h2>
@@ -185,7 +188,7 @@
             </div>
         </div>
     </section>
-    <section class="expand">
+    <section class="expand" id = 'expand'>
         <div class="container">
             <h2 class="expand_title">Варианты развертывания <br>
                 Ваших данных</h2>
@@ -206,7 +209,7 @@
             <div class="expand_left-square"></div>
             <div class="expand_right-square"></div>
     </section>
-    <section class="access">
+    <section class="access" id = 'access'>
         <div class="contatiner">
             <div class="access_block">
                 <div class="access_block_additional">
@@ -219,7 +222,7 @@
 
         </div>
     </section>
-    <footer>
+    <footer id = 'footer'>
         <div class="container">
             <div class="content">
                 <div class="content_column">
@@ -274,9 +277,8 @@
             <h2 class="rights">© Prengi Ink. 2008-2017 Все права защищены.</h2>
         </div>
     </footer>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="js/slick.min.js"></script> --> -->
     <script src="js/script.js"></script>
 </body>
 
