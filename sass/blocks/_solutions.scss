@@ -46,33 +46,40 @@
     }
     &_slider {
         position: absolute;
+        top: 307px;
+        left: 405px;
         display: flex;
         &_item {
+            display: none;
+            animation: 0.5s;
             img {
             width: 695px;
             height: 436px;
             }
         }
     }
-    .slick-slider {
-        top: -523px;
-        right: -19.55%;
-    }
-    .slick-prev {
+    // .slick-slider {
+    //     top: -523px;
+    //     right: -19.55%;
+    // }
+
+    &_left-arrow {
         border: none;
         background:rgba(0,0,0,0);
         position: absolute;
         z-index: 1;
         top: 50%;
-        right: 110%;
+        right: 80%;
+        cursor: pointer;
     }
-    .slick-next {
+    &_right-arrow {
         border: none;
         background:rgba(0,0,0,0);
         position: absolute;
         z-index: 1;
         top: 50%;
-        right: 27%;
+        right: 19%;
+        cursor: pointer;
     }
     .container {
         height: 100%;

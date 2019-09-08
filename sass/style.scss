@@ -10,12 +10,23 @@
 @import 'blocks/footer';
 @import 'blocks/buttons';
 
-
+@import 'lib/animate';
 @import 'lib/slick';
 
 .container {
     width: 1140px;
     margin: 0 auto;
+}
+
+.anchor {
+    position: fixed;
+    display: none;
+    bottom: 20px;
+    right: 30px;
+    z-index: 3;
+    cursor: pointer;
+    animation: 2s bounceInDown;
+    
 }
 
 * {
