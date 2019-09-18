@@ -27,8 +27,12 @@
                     line-height: 26px;
                     text-transform: uppercase;
                     text-decoration: none;
-                }
 
+                   
+                }
+                &:hover {
+                    transform: scale3d(1.5, 1.5, 1.5);
+                }
                 &:last-child {
                     margin-right: 0;
                 }
@@ -75,11 +79,16 @@
         &_arrow-left {
             margin-right: 13px;
             cursor: pointer;
-            
+
+            &:hover {
+                transform: scale3d(2.1, 2.2, 1.4);
+                margin-top: -4px;
+            }
+
             &::before {
                 display: inline-block;
                 content: '';
-                width: 11px;
+                width: 10px;
                 height: 1px;
                 background-color: #ffffff;
                 transform: rotate(-30deg);
@@ -88,22 +97,30 @@
             &::after {
                 display: block;
                 content: '';
-                width: 11px;
+                width: 10px;
                 height: 1px;
                 background-color: #ffffff;
                 transform: rotate(30deg);
 
+
             }
+
 
         }
 
         &_arrow-right {
             margin-left: 10px;
             cursor: pointer;
+
+            &:hover {
+                transform: scale3d(2.1, 2.2, 1.4);
+                margin-top: -4px;
+            }
+
             &::before {
                 display: inline-block;
                 content: '';
-                width: 11px;
+                width: 10px;
                 height: 1px;
                 background-color: #ffffff;
                 transform: rotate(30deg);
@@ -112,7 +129,7 @@
             &::after {
                 display: block;
                 content: '';
-                width: 11px;
+                width: 10px;
                 height: 1px;
                 background-color: #ffffff;
                 transform: rotate(-30deg);
@@ -120,6 +137,7 @@
             }
 
         }
+
         &_round {
             cursor: pointer;
             width: 11px;
@@ -128,11 +146,15 @@
             border-radius: 100%;
             margin-right: 3px;
             margin-top: 10px;
+            transition: all 0.5s;
+
             &_active {
                 background-color: #ffffff;
             }
-        };
-        
+        }
+
+        ;
+
 
 
     }

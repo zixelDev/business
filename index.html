@@ -72,7 +72,7 @@
             <h2 class="promo_title">Управляй своим бизнесом <br> через Smartphone</h2>
             <h2 class="promo_subtitle">PRENGI - Платформа для прозрачного <br>
                 управления бизнесом</h2>
-            <button class="button">Получить доступ</button>
+            <button class="button" data-modal="consultation">Получить доступ</button>
             <img src="images/main_phone.png" alt="main_phone" class="phone">
             <div class="promo_slider">
                 <div class="promo_slider_arrow-left"></div>
@@ -156,33 +156,33 @@
                 <div class="advantages_list_item">
                     <img src="images/advantages_time.jpg" alt="advantages_time">
                     <div class="advantages_list_item_bb"></div>
-                    <h2>Возможность внедрения и <br> тестирования в реальном <br> времени</h2>
+                    <h2 class="slideInUp wow data-wow-duration=" 2s" data-wow-delay="0.5s"">Возможность внедрения и <br> тестирования в реальном <br> времени</h2>
                 </div>
                 <div class="advantages_list_item">
                     <img src="images/advantages_intellect.jpg" alt="advantages_intellect">
                     <div class="advantages_list_item_bb"></div>
-                    <h2>Система “Intellect”, учет уровня <br> доступов</h2>
+                    <h2 class="slideInUp wow data-wow-duration=" 2s" data-wow-delay="0.5s">Система “Intellect”, учет уровня <br> доступов</h2>
                 </div>
                 <div class="advantages_list_item">
                     <img src="images/advantages_globe.jpg" alt="advantages_globe">
                     <div class="advantages_list_item_bb"></div>
-                    <h2>Возможность использовать из <br> любой точки мира с любого <br> устройства</h2>
+                    <h2 class="slideInUp wow data-wow-duration=" 2s" data-wow-delay="0.5s">Возможность использовать из <br> любой точки мира с любого <br> устройства</h2>
                 </div>
                 <div class="advantages_list_item">
                     <img src="images/advantages_programmer.jpg" alt="advantages_programmer">
                     <div class="advantages_list_item_bb"></div>
-                    <h2>Нет необходимости установки <br> и стационарной работы <br> программиста</h2>
+                    <h2 class="slideInUp wow data-wow-duration=" 2s" data-wow-delay="0.5s">Нет необходимости установки <br> и стационарной работы <br> программиста</h2>
                 </div>
                 <div class="advantages_list_item">
                     <img src="images/advantages_process.jpg" alt="advantages_process">
                     <div class="advantages_list_item_bb"></div>
-                    <h2>“Живые” <br>
+                    <h2 class="slideInUp wow data-wow-duration=" 2s" data-wow-delay="0.5s">“Живые” <br>
                         бизнес-процессы</h2>
                 </div>
                 <div class="advantages_list_item">
                     <img src="images/advantages_no_prepayment.jpg" alt="advantages_no_prepayment">
                     <div class="advantages_list_item_bb"></div>
-                    <h2>Никаких предоплат, оплата <br>
+                    <h2 class="slideInUp wow data-wow-duration=" 2s" data-wow-delay="0.5s">Никаких предоплат, оплата <br>
                         после старта</h2>
                 </div>
             </div>
@@ -193,13 +193,12 @@
             <h2 class="expand_title">Варианты развертывания <br>
                 Ваших данных</h2>
             <div class="expand_section">
-                <div class="expand_section_item left">
+                <div class="expand_section_item left bounceIn wow data-wow-duration=" 2s" data-wow-delay="0.5s">
                     <h2 class="expand_section_item_title">Облачное хранилище</h2>
                     <h2 class="expand_section_item_descr">Это выделенное пользователю пространство на жестком<br> диске
                         сервера, находящегося в Интернете. </h2>
                 </div>
-                <div class="expand_section_item right">
-
+                <div class="expand_section_item right bounceIn wow data-wow-duration=" 2s" data-wow-delay="0.5s"">
                     <h2 class="expand_section_item_title">Размещение не сервере</h2>
                     <h2 class="expand_section_item_descr">Услуга аренды пространства в центре обработки данных <br>
                         (колокация серверов) предназначена для клиентов</h2>
@@ -218,7 +217,7 @@
             </div>
             <h2 class="access_title">Приступить очень просто! <br>
                 Нужно получить доступ и начать работу!</h2>
-            <button class="button button_call">связаться с нами</button>
+            <button class="button button_call" data-modal="consultation">связаться с нами</button>
 
         </div>
     </section>
@@ -277,8 +276,28 @@
             <h2 class="rights">© Prengi Ink. 2008-2017 Все права защищены.</h2>
         </div>
     </footer>
+    <div class="overlay">
+        <div class="modal" id = "consultation">
+            <div class="modal_close" >&times;</div>
+            <div class="modal_subtitle">Просто заполните форму заявки</div>
+            <div class="modal_descr">и мы перезвоним вам в течении 10 минут</div>
+            <form action="#" class="feed_form">
+                <input type="text"  placeholder="Ваше имя" name="name">
+                <input   placeholder="Ваш телефон" name="number">
+                <input type="email"  placeholder="Ваша почта" name="email">
+                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+
+        </div>
+
+        <div class="modal modal_thanks" id="thanks">
+                <div class="modal_close">&times;</div>
+                <div class="modal_subtitle">Спасибо за вашу заявку!</div>
+                <div class="modal_descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- <script src="js/slick.min.js"></script> --> -->
+    <script src="js/wow.min.js"></script> -->
     <script src="js/script.js"></script>
 </body>
 
