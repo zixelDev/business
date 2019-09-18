@@ -1,5 +1,5 @@
 var slides = document.querySelectorAll('.solutions_slider_item'),
-    pathBg = ['../images/main_bg.jpg', '../images/scr2.jpg', '../images/scr3.jpg', '../images/scr4.jpg', '../images/scr5.jpg'],
+    pathBg = ['images/main_bg.jpg', 'images/scr2.jpg', 'images/scr3.jpg', 'images/scr4.jpg', 'images/scr5.jpg'],
     currentObjects = {
         slide: 0,
         promo: 0,
@@ -81,6 +81,7 @@ function PushNextSlide(target) {
         let img = new Image();
         img.src = pathBg[currentObjects.promo];
         img.onload = function () {
+            console.log(this.src);
             promo.style.background = `url('${this.src}')`;
             promo.style.backgroundPosition = 'center';
             promo.style.backgroundSize = 'cover';
